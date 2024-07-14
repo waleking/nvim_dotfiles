@@ -44,4 +44,11 @@ require("lazy").setup({
   },
   -- which key
   "folke/which-key.nvim",
+  -- neorg
+  {
+    "nvim-neorg/neorg",
+    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    version = "*", -- Pin Neorg to the latest stable release
+    config = true,
+  },
 })

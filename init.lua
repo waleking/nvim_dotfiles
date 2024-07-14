@@ -17,6 +17,10 @@ vim.opt.rtp:prepend(lazypath)
 -- enable seamless integration between Neovim and the system clipboard.
 vim.opt.clipboard:append("unnamedplus")
 
+-- enable folding
+vim.wo.foldmethod = "expr"
+vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
+
 require("core.options")
 require("core.keymaps")
 require("core.plugins")
