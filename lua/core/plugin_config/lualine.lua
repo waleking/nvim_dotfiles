@@ -4,10 +4,10 @@ require('lualine').setup {
     theme = 'nightfly',
   },
   sections = {
-    lualine_a = {
+    lualine_c = {
       {
         'filename',
-        path = 1,
+        path = 2,
       }
     }
   }
