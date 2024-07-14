@@ -14,6 +14,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- enable seamless integration between Neovim and the system clipboard.
+vim.opt.clipboard:append("unnamedplus")
 
 require("core.options")
 require("core.keymaps")
